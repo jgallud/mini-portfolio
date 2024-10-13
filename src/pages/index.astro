@@ -1,10 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
+import GitHub from '../icons/GitHub.astro';
+import SocialPill from '../components/SocialPill.astro';
 ---
 
 <Layout title="Portfolio minimalista">
 	<main>
-		<h1>Hola Mundo</h1>
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+			<h1 class="text-5xl font-bold flex flex-row gap-x-4 pb-4">Hola, soy JAG <a href="https://www.linkedin.com/in/jgallud" target="_blank" rel="noopener" class="flex justify-center items-center"> <Badge>Disponible para trabajar</Badge></a></h1>
+			<h2 class="text-2xl text-wrap"><span>Más de 20 años de experiencia</span><span class="text-blue-200/90"> en desarrollo de sistemas interactivos y sistemas Web. De Valencia, España 🇪🇸. </span>Especializado en motivar a gente desmotivada.</h2>
+			<ul>
+				<nav class="flex gap-x-2">
+					<SocialPill href="https://www.linkedin.com/in/jgallud">
+						<LinkedIn class="w- h-6"/>
+						LinkedIn
+					</SocialPill>
+					<SocialPill href="https://github.com/jgallud">
+						<GitHub class="w- h-6"/>
+						GitHub
+					</SocialPill></li>
+				</nav>
+			</ul>
+		</section>
 	</main>
 </Layout>
 
